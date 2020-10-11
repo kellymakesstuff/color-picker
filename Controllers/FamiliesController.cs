@@ -12,7 +12,14 @@ namespace ColorPicker.Controllers
   //no views so inherit from ControllerBase instead of Controller
   public class FamiliesController : ControllerBase
   {
-    private readonly MockColorPickerRepo _repository = new MockColorPickerRepo();
+    private readonly IColorPickerRepo _repository;
+
+    //constructor for dependency injection
+    public FamiliesController(IColorPickerRepo repository)
+    {
+      _repository = repository;
+    }
+    // private readonly MockColorPickerRepo _repository = new MockColorPickerRepo();
 
     //api/families
     [HttpGet]

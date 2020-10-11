@@ -20,7 +20,7 @@
       "outputPath": "/Users/kellybee/Dev/dotnet/ColorPicker/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kellybee/.config/NuGet/NuGet.Config"
+        "/Users/kellybee/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
