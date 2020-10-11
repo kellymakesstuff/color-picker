@@ -12,3 +12,4 @@ namespace ColorPicker.Models
     public IList<Color> Colors { get; set; } = new List<Color>();
 
   }
+}
