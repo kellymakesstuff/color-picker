@@ -18,7 +18,7 @@ namespace ColorPicker.Data
 
     }
 
-    public Family getFamilyById(int id)
+    public Family GetFamilyById(int id)
     {
       return new Family { Id = 0, Name = "Red", Type = "Primary", Compliment = "Green" };
     }
