@@ -7,12 +7,20 @@ namespace ColorPicker.Data
   {
     public IEnumerable<Family> GetAllFamilies()
     {
-      throw new System.NotImplementedException();
+      var families = new List<Family>
+      {
+        new Family { Id = 0, Name = "Red", Type = "Primary", Compliment = "Green" },
+        new Family { Id = 1, Name = "Orange", Type = "Secondary", Compliment = "Purple" },
+        new Family { Id = 2, Name = "Yellow", Type = "Primary", Compliment = "Blue" },
+      };
+
+      return families;
+
     }
 
     public Family getFamilyById(int id)
     {
-      throw new System.NotImplementedException();
+      return new Family { Id = 0, Name = "Red", Type = "Primary", Compliment = "Green" };
     }
   }
 }

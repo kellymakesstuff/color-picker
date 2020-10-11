@@ -9,8 +9,8 @@ namespace ColorPicker.Models
     public string ComplimentColor { get; set; }
 
 
-    public int FamilyId { get; set; }
-    public Family Family { get; set; }
+    // public int FamilyId { get; set; }
+    // public Family Family { get; set; }
 
   }
 }
