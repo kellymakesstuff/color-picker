@@ -1,19 +1,18 @@
 ﻿<Properties StartupConfiguration="{72259566-3960-4918-B27E-2844180982E1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/launchSettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ColorPicker.csproj">
     <Files>
       <File FileName="Program.cs" Line="11" Column="2" />
-      <File FileName="Startup.cs" Line="14" Column="22" />
-      <File FileName="appsettings.json" Line="11" Column="1" />
+      <File FileName="Startup.cs" />
+      <File FileName="appsettings.json" />
       <File FileName="Properties/launchSettings.json" Line="10" Column="5" />
+      <File FileName="ColorPicker.csproj" Line="17" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ColorPicker" expanded="True">
-            <Node name="ColorPicker" expanded="True">
-              <Node name="Properties" expanded="True">
-                <Node name="launchSettings.json" selected="True" />
-              </Node>
+            <Node name="ColorPicker" expanded="True" selected="True">
+              <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>

@@ -1,6 +1,7 @@
 using ColorPicker.Models;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace ColorPicker.data
 {
   public class ColorPickerContext : DbContext
