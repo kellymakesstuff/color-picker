@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AutoMapper;
 using ColorPicker.Data;
 using ColorPicker.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -12,11 +13,13 @@ namespace ColorPicker.Controllers
   public class FamiliesController : ControllerBase
   {
     private readonly IColorPickerRepo _repository;
+    private readonly IMapper _mapper;
 
     //constructor for dependency injection
-    public FamiliesController(IColorPickerRepo repository)
+    public FamiliesController(IColorPickerRepo repository, IMapper mapper)
     {
       _repository = repository;
+      _mapper = mapper;
     }
 
     //api/families
