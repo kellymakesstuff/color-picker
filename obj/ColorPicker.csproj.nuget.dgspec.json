@@ -36,11 +36,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[5.0.0-rc.1.20451.13, )"
+              "version": "[*, )"
             },
-            "Microsoft.EntityFrameworkCore.Abstractions": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0-rc.1.20451.13, )"
             },
@@ -59,10 +59,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0-rc.1.20451.13, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[5.0.0-alpha1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

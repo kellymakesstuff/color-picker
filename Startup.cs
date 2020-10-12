@@ -1,18 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using ColorPicker.Data;
-using ColorPicker.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using System;
 
 namespace ColorPicker
 {
@@ -34,9 +28,9 @@ namespace ColorPicker
 
       services.AddControllers();
 
-      services.AddScoped<IColorPickerRepo, SqlColorPickerRepo>();
-      // services.AddScoped<IColorPickerRepo, MockColorPickerRepo>();
+      services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+      services.AddScoped<IColorPickerRepo, SqlColorPickerRepo>();
 
     }
 

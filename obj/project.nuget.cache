@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "l93vz7iVjwuRWODDFqs2GDOVbQlY/R+GaofegyLMBkK8lkh/E8zard8/bL85hPLsbQ3x0qrb9X8O6nPv5N9M+w==",
+  "dgSpecHash": "Z1kJvD1u6MQDXtlWpNFeS2XFbkz6QwlyI96/Bb72B8gUNaqun4LTb6y+Mi8RPLYYDHtxmMga6x2Kxo+nRxMbOw==",
   "success": true,
   "projectFilePath": "/Users/kellybee/Dev/dotnet/ColorPicker/ColorPicker.csproj",
   "expectedPackageFiles": [
+    "/Users/kellybee/.nuget/packages/automapper/10.0.0/automapper.10.0.0.nupkg.sha512",
+    "/Users/kellybee/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.0.1/automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/microsoft.entityframeworkcore/5.0.0-rc.1.20451.13/microsoft.entityframeworkcore.5.0.0-rc.1.20451.13.nupkg.sha512",
@@ -21,11 +23,12 @@
     "/Users/kellybee/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0-rc.1.20451.14/microsoft.extensions.logging.abstractions.5.0.0-rc.1.20451.14.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/microsoft.extensions.options/5.0.0-rc.1.20451.14/microsoft.extensions.options.5.0.0-rc.1.20451.14.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/microsoft.extensions.primitives/5.0.0-rc.1.20451.14/microsoft.extensions.primitives.5.0.0-rc.1.20451.14.nupkg.sha512",
-    "/Users/kellybee/.nuget/packages/npgsql/5.0.0-alpha1/npgsql.5.0.0-alpha1.nupkg.sha512",
+    "/Users/kellybee/.nuget/packages/npgsql/4.1.4/npgsql.4.1.4.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/npgsql.entityframeworkcore.postgresql/5.0.0-rc1/npgsql.entityframeworkcore.postgresql.5.0.0-rc1.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/system.collections.immutable/5.0.0-rc.1.20451.14/system.collections.immutable.5.0.0-rc.1.20451.14.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/system.componentmodel.annotations/5.0.0-rc.1.20451.14/system.componentmodel.annotations.5.0.0-rc.1.20451.14.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0-rc.1.20451.14/system.diagnostics.diagnosticsource.5.0.0-rc.1.20451.14.nupkg.sha512",
+    "/Users/kellybee/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
     "/Users/kellybee/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
   "logs": []
