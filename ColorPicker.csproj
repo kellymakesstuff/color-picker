@@ -8,4 +8,15 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
   </ItemGroup>
+
+
+  <ItemGroup>
+  <!-- NuGet packages entityframework core, entityframework core design, npgsql  -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0-rc.1.20451.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql" Version="5.0.0-alpha1" />
+  </ItemGroup>
 </Project>
