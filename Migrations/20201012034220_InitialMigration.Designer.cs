@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ColorPicker.Migrations
 {
     [DbContext(typeof(ColorPickerContext))]
-    [Migration("20201012022527_InitialMigration")]
+    [Migration("20201012034220_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,12 +58,15 @@ namespace ColorPicker.Migrations
                         .UseIdentityByDefaultColumn();
 
                     b.Property<string>("Compliment")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Type")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");

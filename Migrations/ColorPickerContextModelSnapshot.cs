@@ -56,12 +56,15 @@ namespace ColorPicker.Migrations
                         .UseIdentityByDefaultColumn();
 
                     b.Property<string>("Compliment")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Type")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
