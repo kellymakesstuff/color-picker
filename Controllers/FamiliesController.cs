@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using AutoMapper;
 using ColorPicker.Data;
+using ColorPicker.Dtos;
 using ColorPicker.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,12 +35,12 @@ namespace ColorPicker.Controllers
 
     //GET api/families/{id}
     [HttpGet("{id}")]
-    public ActionResult<Family> GetFamilyById(int id)
+    public ActionResult<FamilyReadDto> GetFamilyById(int id)
     {
       var familyItem = _repository.GetFamilyById(id);
       if (familyItem != null)
       {
-        return Ok(familyItem);
+        return Ok(_mapper.Map<FamilyReadDto>(familyItem));
       }
       return NotFound();
     }
