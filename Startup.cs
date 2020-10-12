@@ -35,7 +35,7 @@ namespace ColorPicker
       services.AddControllers();
 
       services.AddScoped<IColorPickerRepo, SqlColorPickerRepo>();
-
+      // services.AddScoped<IColorPickerRepo, MockColorPickerRepo>();
 
 
     }
