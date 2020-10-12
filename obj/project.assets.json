@@ -967,7 +967,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= *",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.0.1",
       "Microsoft.EntityFrameworkCore >= 5.0.0-rc.1.20451.13",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0-rc.1.20451.13",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.0-rc.1.20451.13",
@@ -1012,7 +1012,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[8.0.1, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

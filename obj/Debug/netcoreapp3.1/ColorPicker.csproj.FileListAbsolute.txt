@@ -38,3 +38,5 @@
 /Users/kellybee/Dev/dotnet/ColorPicker/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
 /Users/kellybee/Dev/dotnet/ColorPicker/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
 /Users/kellybee/Dev/dotnet/ColorPicker/obj/Debug/netcoreapp3.1/ColorPicker.csproj.CopyComplete
+/Users/kellybee/Dev/dotnet/ColorPicker/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/kellybee/Dev/dotnet/ColorPicker/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
