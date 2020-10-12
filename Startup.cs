@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ColorPicker.data;
 using ColorPicker.Data;
 using ColorPicker.Models;
 using Microsoft.AspNetCore.Builder;
@@ -35,7 +34,7 @@ namespace ColorPicker
 
       services.AddControllers();
 
-      services.AddScoped<IColorPickerRepo, MockColorPickerRepo>();
+      services.AddScoped<IColorPickerRepo, SqlColorPickerRepo>();
 
 
 
