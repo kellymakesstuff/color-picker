@@ -19,9 +19,18 @@ namespace ColorPicker.Data
       return _context.Families.ToList();
     }
 
+    public IEnumerable<Color> GetAllColors()
+    {
+      return _context.Colors.ToList();
+    }
     public Family GetFamilyById(int id)
     {
       return _context.Families.FirstOrDefault(p => p.Id == id);
+    }
+
+    public Color GetColorById(int id)
+    {
+      return _context.Colors.FirstOrDefault(p => p.Id == id);
     }
   }
 }

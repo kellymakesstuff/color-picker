@@ -12,5 +12,6 @@ namespace ColorPicker.Data
     }
 
     public DbSet<Family> Families { get; set; }
+    public DbSet<Color> Colors { get; set; }
   }
 }

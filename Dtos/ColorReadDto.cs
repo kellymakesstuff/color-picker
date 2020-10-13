@@ -1,6 +1,8 @@
-namespace ColorPicker.Models
+using ColorPicker.Models;
+
+namespace ColorPicker.Dtos
 {
-  public class Color
+  public class ColorReadDto
   {
     public int Id { get; set; }
     public string Name { get; set; }
@@ -10,7 +12,6 @@ namespace ColorPicker.Models
 
 
     public int FamilyId { get; set; }
-    public Family Family { get; set; }
 
   }
 }

@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using ColorPicker.Models;
+
 namespace ColorPicker.Dtos
 {
   public class FamilyReadDto
@@ -9,5 +12,7 @@ namespace ColorPicker.Dtos
     public string Type { get; set; }
 
     public string Compliment { get; set; }
+
+    // public IList<Color> Colors { get; set; } = new List<Color>();
   }
 }

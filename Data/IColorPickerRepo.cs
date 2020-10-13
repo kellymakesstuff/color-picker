@@ -7,5 +7,8 @@ namespace ColorPicker.Data
   {
     IEnumerable<Family> GetAllFamilies();
     Family GetFamilyById(int id);
+
+    IEnumerable<Color> GetAllColors();
+    Color GetColorById(int id);
   }
 }
