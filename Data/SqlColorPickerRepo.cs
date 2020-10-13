@@ -32,5 +32,19 @@ namespace ColorPicker.Data
     {
       return _context.Colors.FirstOrDefault(p => p.Id == id);
     }
+
+    public bool SaveChanges()
+    {
+      return (_context.SaveChanges() >= 0);
+    }
+
+    public void CreateColor(Color clr)
+    {
+      if (clr == null)
+      {
+        throw new System.ArgumentNullException(nameof(clr));
+      }
+      _context.Colors.Add(clr);
+    }
   }
 }
