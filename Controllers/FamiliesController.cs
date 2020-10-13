@@ -25,11 +25,11 @@ namespace ColorPicker.Controllers
 
     //api/families
     [HttpGet]
-    public ActionResult<IEnumerable<Family>> GetFamiliesList()
+    public ActionResult<IEnumerable<FamilyReadDto>> GetFamiliesList()
     {
       var familyItems = _repository.GetAllFamilies();
 
-      return Ok(familyItems);
+      return Ok(_mapper.Map<IEnumerable<FamilyReadDto>>(familyItems));
 
     }
 
