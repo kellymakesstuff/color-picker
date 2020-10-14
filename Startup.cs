@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
+using Newtonsoft.Json.Serialization;
 
 
 namespace ColorPicker
@@ -27,7 +28,10 @@ namespace ColorPicker
       services.AddEntityFrameworkNpgsql().AddDbContext<ColorPickerContext>(opt =>
             opt.UseNpgsql(Configuration.GetConnectionString("ColorPickerConnection")));
 
-      services.AddControllers();
+      services.AddControllers().AddNewtonsoftJson(s =>
+      {
+        s.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+      });
 
       services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
