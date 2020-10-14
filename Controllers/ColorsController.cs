@@ -56,6 +56,25 @@ namespace ColorPicker.Controllers
       var colorReadDto = _mapper.Map<ColorReadDto>(colorModel);
       return CreatedAtRoute(nameof(GetColorById), new { Id = colorReadDto.Id }, colorReadDto);
     }
+
+    //PUT api/colors/{id}
+    [HttpPut("{id}")]
+    public ActionResult UpdateColor(int id, ColorUpdateDto colorUpdateDto)
+    {
+      var colorModelFromRepo = _repository.GetColorById(id);
+      if (colorModelFromRepo == null)
+      {
+        return NotFound();
+      }
+
+      _mapper.Map(colorUpdateDto, colorModelFromRepo);
+
+      _repository.UpdateColor(colorModelFromRepo);
+
+      _repository.SaveChanges();
+
+      return NoContent();
+    }
   }
 }
 

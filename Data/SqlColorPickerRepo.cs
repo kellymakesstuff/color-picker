@@ -46,5 +46,10 @@ namespace ColorPicker.Data
       }
       _context.Colors.Add(clr);
     }
+
+    public void UpdateColor(Color clr)
+    {
+      //nothing bc dbContext does it
+    }
   }
 }

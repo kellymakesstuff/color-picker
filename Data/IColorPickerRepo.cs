@@ -12,5 +12,6 @@ namespace ColorPicker.Data
     IEnumerable<Color> GetAllColors();
     Color GetColorById(int id);
     void CreateColor(Color clr);
+    void UpdateColor(Color clr);
   }
 }

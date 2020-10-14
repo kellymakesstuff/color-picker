@@ -11,6 +11,7 @@ namespace ColorPicker.Profiles
     {
       CreateMap<Color, ColorReadDto>();
       CreateMap<ColorCreateDto, Color>();
+      CreateMap<ColorUpdateDto, Color>();
     }
   }
 }
