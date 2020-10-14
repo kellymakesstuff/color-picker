@@ -34,7 +34,7 @@ namespace ColorPicker.Controllers
     }
 
     //GET api/colors/{id}
-    [HttpGet("{id}")]
+    [HttpGet("{id}", Name = "GetColorById")]
     public ActionResult<ColorReadDto> GetColorById(int id)
     {
       var colorItem = _repository.GetColorById(id);
@@ -53,7 +53,8 @@ namespace ColorPicker.Controllers
       _repository.CreateColor(colorModel);
       _repository.SaveChanges();
 
-      return Ok(colorModel);
+      var colorReadDto = _mapper.Map<ColorReadDto>(colorModel);
+      return CreatedAtRoute(nameof(GetColorById), new { Id = colorReadDto.Id }, colorReadDto);
     }
   }
 }
