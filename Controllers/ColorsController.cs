@@ -44,6 +44,17 @@ namespace ColorPicker.Controllers
       }
       return NotFound();
     }
+
+    //POST api/colors
+    [HttpPost]
+    public ActionResult<ColorReadDto> CreateColor(ColorCreateDto colorCreateDto)
+    {
+      var colorModel = _mapper.Map<Color>(colorCreateDto);
+      _repository.CreateColor(colorModel);
+      _repository.SaveChanges();
+
+      return Ok(colorModel);
+    }
   }
 }
 

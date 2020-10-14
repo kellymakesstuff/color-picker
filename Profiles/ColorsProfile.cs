@@ -10,6 +10,7 @@ namespace ColorPicker.Profiles
     public ColorsProfile()
     {
       CreateMap<Color, ColorReadDto>();
+      CreateMap<ColorCreateDto, Color>();
     }
   }
 }
