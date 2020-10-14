@@ -103,6 +103,22 @@ namespace ColorPicker.Controllers
       return NoContent();
 
     }
+
+    //DELETE api/colors/{id}
+    [HttpDelete("{id}")]
+    public ActionResult DeleteColor(int id)
+    {
+      var colorModelFromRepo = _repository.GetColorById(id);
+      if (colorModelFromRepo == null)
+      {
+        return NotFound();
+      }
+
+      _repository.DeleteColor(colorModelFromRepo);
+      _repository.SaveChanges();
+
+      return NoContent();
+    }
   }
 }
 

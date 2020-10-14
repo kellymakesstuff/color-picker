@@ -13,5 +13,7 @@ namespace ColorPicker.Data
     Color GetColorById(int id);
     void CreateColor(Color clr);
     void UpdateColor(Color clr);
+
+    void DeleteColor(Color clr);
   }
 }

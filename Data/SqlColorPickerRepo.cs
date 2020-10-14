@@ -51,5 +51,17 @@ namespace ColorPicker.Data
     {
       //nothing bc dbContext does it
     }
+
+    public void DeleteColor(Color clr)
+    {
+      if (clr == null)
+      {
+        throw new System.ArgumentNullException(nameof(clr));
+      }
+
+      _context.Colors.Remove(clr);
+    }
+
+
   }
 }
