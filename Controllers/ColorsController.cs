@@ -4,6 +4,7 @@ using ColorPicker.Data;
 using ColorPicker.Dtos;
 using ColorPicker.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace ColorPicker.Controllers
 {
@@ -74,6 +75,33 @@ namespace ColorPicker.Controllers
       _repository.SaveChanges();
 
       return NoContent();
+    }
+
+    //PATCH api/colors/{id}
+    [HttpPatch("{id}")]
+    public ActionResult PartialColorUpdate(int id, JsonPatchDocument<ColorUpdateDto> patchDoc)
+    {
+      var colorModelFromRepo = _repository.GetColorById(id);
+      if (colorModelFromRepo == null)
+      {
+        return NotFound();
+      }
+
+      var colorToPatch = _mapper.Map<ColorUpdateDto>(colorModelFromRepo);
+      patchDoc.ApplyTo(colorToPatch, ModelState);
+      if (!TryValidateModel(colorToPatch))
+      {
+        return ValidationProblem(ModelState);
+      }
+
+      _mapper.Map(colorToPatch, colorModelFromRepo);
+
+      _repository.UpdateColor(colorModelFromRepo);
+
+      _repository.SaveChanges();
+
+      return NoContent();
+
     }
   }
 }
